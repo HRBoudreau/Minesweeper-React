@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+:root {
+  --clear-blue: rgb(75, 75, 202);
 }
 
-.App-logo {
-  height: 40vmin;
+.App {
+  background: var(--clear-blue);
+  font-family:'Inter', sans-serif;
+  color: whitesmoke;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.game {
+  height: 100%;
+}
+
+.hidden, .revealed, .flag, .gameOver {
+  width: 26px;
+  height: 26px;
+  border-radius: 0px;
+  display: table-cell;
+  padding: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  user-select: none;
+}
+
+
+.flag {
+  background-color: rgb(133, 7, 7);
+  border: 2px solid rgb(60, 7, 2);
+}
+
+.revealed {
+  background-color: var(--clear-blue);
+  border: 2px solid rgb(67, 50, 190);
+}
+
+.hidden {
+  background-color: rgb(210, 31, 31);
+  border: 2px solid rgb(132, 32, 32);
+}
+
+.gameOver {
+  background-color: rgb(134, 190, 22);
+  border: 2px solid rgb(33, 162, 13);
+}
+
+.button {
+  justify-content:right;
+  border-radius: 0px;
+  border-width: 0px;
+  width: 100px;
+  height: 35px;
+  background-color: rgb(0, 0, 0);
+  margin: 3px;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: whitesmoke;
+}
+
+.dropdown-button {
+  justify-content:right;
+  border-radius: 0px;
+  border-width: 0px;
+  width: 120px;
+  height: 35px;
+  background-color: rgb(0, 0, 0);
+  margin: 3px;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: whitesmoke;
+}
+
+.nav {
+  display: flex;
+  background-color:black;
+}
+
+.navElements {
+  flex: auto;
+}
+
+.bodyElements {
+  flex: auto;
+}
+
+.fillElement {
+  height: 230px;
+  flex:auto;
+}
+
+.body, .footer {
+  display: flex;
+}
+
+.board {
+  margin-top: 10px;
+}
+
+.interText {
+  color:rgb(181, 159, 117);
+  margin-top: 5px;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+
+.dropdown > .button:focus,
+button:hover {
+  color: rgb(190, 183, 183);
+}
+
+.dropdown-menu {
+  background-color: rgb(207, 179, 179);
+  position: absolute;
+  left: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0.1);
+  user-select: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.dropdown-button:hover + .dropdown-menu, .dropdown-menu:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+  pointer-events: auto;
+  z-index: inherit+1; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.dropdown-item {
+  display: block;
+  justify-content:right;
+  border-radius: 0px;
+  border-width: 0px;
+  width: 120px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Inter', sans-serif;
+  color: whitesmoke;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  position: relative;
+  margin-top: 10px;
+  background-color: black;
+  height: 100%;
 }

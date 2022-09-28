@@ -1,3 +1,14 @@
+#Minesweeper in React
+
+It's minesweeper using react. There are three modes; easy, medium, and hard. Have fun!
+
+![image](https://user-images.githubusercontent.com/76916678/192661621-5084d78f-bb13-4782-84d4-42efb17afab3.png)
+
+![image](https://user-images.githubusercontent.com/76916678/192661658-58c6cf5f-5265-4fba-827f-fcec3da5bea0.png)
+
+![image](https://user-images.githubusercontent.com/76916678/192661803-a96ce538-9f89-4f99-bc17-7b5d7fb02288.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

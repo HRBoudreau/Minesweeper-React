@@ -1,4 +1,4 @@
-#Minesweeper in React
+# Minesweeper in React
 
 It's minesweeper using react. There are three modes; easy, medium, and hard. Have fun!
 
